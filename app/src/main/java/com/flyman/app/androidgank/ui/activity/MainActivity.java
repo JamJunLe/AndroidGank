@@ -128,14 +128,17 @@ public class MainActivity extends SubscriberActivity implements NavigationView.O
             //用于设置后续新建button的LayoutParams
             aboutContainer = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.about_container, null, false);
             TextView tv_gank_io = (TextView) aboutContainer.findViewById(R.id.tv_gank_io);
+            TextView tv_gank_address = (TextView) aboutContainer.findViewById(R.id.tv_gank_address);
             tv_gank_io.setOnClickListener(this);
-            tv_gank_io.setText(Html.fromHtml(getResources().getString(R.string.text_about_data_from)+"<font color='#2196f3'><a href="+">gank.io</a>"));
+            tv_gank_address.setOnClickListener(this);
+            tv_gank_io.setText(Html.fromHtml(getResources().getString(R.string.text_about_data_from) + " <font color='#2196f3'><a href=" + ">gank.io</a>"));
+            tv_gank_address.setText(Html.fromHtml(getResources().getString(R.string.text_about_data_from_github)+" <font color='#2196f3'><a href=" + ">AndroidGank</a>"));
             String[] titles = getResources().getStringArray(R.array.open_source_framework_title);
             String[] urls = getResources().getStringArray(R.array.open_source_framework_url);
             for (int i = 0; i < titles.length; i++) {
                 mList.add(new About(titles[i], urls[i]));
                 TextView tv = (TextView) LayoutInflater.from(this).inflate(R.layout.item_about_txtview, null, false);
-                tv.setText(Html.fromHtml("<font color='#2196f3'><a href=>"+titles[i]+"</a>"));
+                tv.setText(Html.fromHtml("<font color='#2196f3'><a href=>" + titles[i] + "</a>"));
                 aboutContainer.addView(tv);
                 tv.setTag(i);
                 tv.setOnClickListener(this);
@@ -205,14 +208,20 @@ public class MainActivity extends SubscriberActivity implements NavigationView.O
     public void onClick(View v) {
         int id = v.getId();
         String url;
-        if(id == R.id.tv_gank_io)//
-        {
-            url = NetWork.GANK_HOMEPAGE;
+        switch (id) {
+            case R.id.tv_gank_io: {
+                url = NetWork.GANK_HOMEPAGE;
+                break;
+            }
+            case R.id.tv_gank_address: {
+                url = NetWork.GITHUB_HOMEPAGE;
+                break;
+            }
+            default: {
+                int position = (int) v.getTag();
+                url = mList.get(position).getUrl();
+            }
         }
-        else {
-            int position = (int) v.getTag();
-            url = mList.get(position).getUrl();
-        }
-        IntentUtil.startWebActivity(this,url);
+        IntentUtil.startWebActivity(this, url);
     }
 }
