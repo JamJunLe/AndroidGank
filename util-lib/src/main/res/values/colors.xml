@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#545454</color>
+    <color name="colorPrimaryDark">#404040</color>
+    <color name="colorAccent">#545454</color>
+
+    <!-- app普通默认字体颜色 浅灰 -->
+    <color name="homepage_fragment_bg">#F5F5F5</color>
+    <color name="drawable_place_holder">#ffffff</color>
+</resources>

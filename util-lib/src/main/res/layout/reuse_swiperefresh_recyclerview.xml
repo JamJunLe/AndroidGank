@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyman.app.util.widget.SuperSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_fragment_bg"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.flyman.app.util.widget.SuperSwipeRefreshLayout>
+

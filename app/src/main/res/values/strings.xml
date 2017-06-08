@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">AndroidGank</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_about">关于</string>
+    <string name="action_about_close">关闭</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- 使用的三方框架-->
+    <string name="text_about_data_from">所有数据均来自于</string>
+    <string name="text_about_data_framework">第三方框架</string>
+    <string-array name="open_source_framework_title">
+        <item>RxJava</item>
+        <item>Retrofit</item>
+        <item>OkHttp</item>
+        <item>ButterKnife</item>
+        <item>SuperAdapter</item>
+        <item>MaterialDialogs</item>
+        <item>MaterialProgressBar</item>
+        <item>Glide</item>
+        <item>PhotoView</item>
+    </string-array>
+    <string-array name="open_source_framework_url">
+        <item>https://github.com/ReactiveX/RxJava</item>
+        <item>https://github.com/square/retrofit</item>
+        <item>https://github.com/square/okhttp</item>
+        <item>https://github.com/JakeWharton/butterknife</item>
+        <item>https://github.com/byteam/SuperAdapter</item>
+        <item>https://github.com/afollestad/material-dialogs</item>
+        <item>https://github.com/DreaminginCodeZH/MaterialProgressBar</item>
+        <item>https://github.com/bumptech/glide</item>
+        <item>https://github.com/chrisbanes/PhotoView</item>
+    </string-array>
+    <!--toolbar str-->
+    <string name="main_toolbar_daily">日报</string>
+    <string name="main_toolbar_android">Android</string>
+    <string name="main_toolbar_ios">iOS</string>
+    <string name="main_toolbar_web">前端</string>
+    <string name="main_toolbar_expand">拓展资源</string>
+    <string name="main_toolbar_beauty">福利</string>
+    <string name="main_toolbar_about">关于</string>
+
+
+    <!-- String MSG_PUSH_LOAD_MORE_REFRESH_FINISH = "没有更多数据了";
+        String MSG_PULL_REFRESH_FAIL = "刷新失败";
+        String MSG_PUSH_LOAD_MORE_REFRESH_FAIL = "上拉刷新失败";
+        String MSG_NET_ERROR = "网络错误";
+        String MSG_NET_PASSIVE = "网络罢工了,请重试";-->
+    <!--网络访问 str-->
+    <string name="msg_push_load_more_refresh_finish">没有更多数据了</string>
+    <string name="msg_pull_refresh_fail">刷新失败</string>
+    <string name="msg_push_load_more_refresh_fail">上拉刷新失败</string>
+    <string name="msg_net_error">网络错误</string>
+    <string name="msg_net_passive">网络罢工了,请重试</string>
+
+    <!--进度条 str-->
+    <string name="msg_footer">加载中,请稍后</string>
+</resources>

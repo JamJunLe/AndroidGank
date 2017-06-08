@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#545454</color>
+    <color name="colorPrimaryDark">#545454</color>
+    <color name="colorAccent">#545454</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="toolbarTransparent">#000000</color>
+    <!-- app普通默认字体颜色 浅灰 -->
+    <color name="drawable_place_holder">#d9d7d7</color>
+
+    <!-- 字体颜色 -->
+    <!-- app普通默认字体颜色 浅灰 -->
+    <color name="app_text_default_color">#999999</color>
+    <!-- 文章标题颜色 -->
+    <color name="text_color_title">#333333</color>
+    <!-- 文章内容颜色 -->
+    <color name="text_color_common">#999999</color>
+
+    <!-- 其他颜色 -->
+    <color name="white">#ffffff</color>
+</resources>
