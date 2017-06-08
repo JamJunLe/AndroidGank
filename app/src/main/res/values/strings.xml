@@ -20,6 +20,7 @@
         <item>MaterialProgressBar</item>
         <item>Glide</item>
         <item>PhotoView</item>
+        <item>Calligraphy</item>
     </string-array>
     <string-array name="open_source_framework_url">
         <item>https://github.com/ReactiveX/RxJava</item>
@@ -31,6 +32,7 @@
         <item>https://github.com/DreaminginCodeZH/MaterialProgressBar</item>
         <item>https://github.com/bumptech/glide</item>
         <item>https://github.com/chrisbanes/PhotoView</item>
+        <item>https://github.com/chrisjenx/Calligraphy</item>
     </string-array>
     <!--toolbar str-->
     <string name="main_toolbar_daily">日报</string>
