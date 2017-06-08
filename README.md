@@ -12,6 +12,11 @@ AndroidGank客户端,干货集中营的第三方客户端,采用MVP模式<br>
     5.全局字体的替换
     6.图片框架Glide的使用
     
+## 项目截图：
+![](https://github.com/JamJunLe/AndroidGank/blob/master/screenshots/Screenshot_1496916850.png)
+![](https://github.com/JamJunLe/AndroidGank/blob/master/screenshots/Screenshot_1496916837.png)
+![](https://github.com/JamJunLe/AndroidGank/blob/master/screenshots/Screenshot_1496916858.png)
+![](https://github.com/JamJunLe/AndroidGank/blob/master/screenshots/Screenshot_1496916865.png)
 ## 第三方框架：
 #### RxJava [RxJava](https://github.com/ReactiveX/RxJava)
 #### 通用适配器 [SuperAdapter](https://github.com/byteam/SuperAdapter)
