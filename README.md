@@ -24,7 +24,7 @@ AndroidGank客户端,干货集中营的第三方客户端,采用MVP模式<br>
 #### 网络框架 [Rtrofit](https://github.com/square/retrofit)  [okhttp](https://github.com/square/okhttp)
 #### 图片加载 [Gide](https://github.com/bumptech/glide)
 #### 图片查看[PhotoView](https://github.com/chrisbanes/PhotoView)
-#### 提示框  [MterialDialogs](https://github.com/afollestad/material-dialogs) 
+#### 提示框  [MaterialDialogs](https://github.com/afollestad/material-dialogs) 
 #### 进度条  [MaterialProgressBar](https://github.com/DreaminginCodeZH/MaterialProgressBar) 
 #### 字体替换  [Calligraphy](https://github.com/chrisjenx/Calligraphy) 
 
