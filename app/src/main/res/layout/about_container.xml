@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/text_padding_large"
-        android:text="@string/text_about_data_from"
+        android:text="@string/text_about_data_from_github"
         android:id="@+id/tv_gank_address"
         />
 

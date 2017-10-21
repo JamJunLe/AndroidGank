@@ -35,7 +35,7 @@ public class GankApplication extends Application {
 
     private void setTypeFace() {
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/AlexBrush-Regular.ttf")
+                .setDefaultFontPath("fonts/web_font.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
