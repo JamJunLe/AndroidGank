@@ -6,9 +6,9 @@ AndroidGank客户端,干货集中营的第三方客户端。<br>
 所有数据来源于http://gank.io/api <br>
 
 ## 项目主要涉及了：
-    1.RxJava,Retrofit的使用；
-    2.MVP模式；
-    3.RecycleView控件的使用；
+    1.RxJava,Retrofit的使用
+    2.MVP模式
+    3.RecycleView控件的使用
     4.WebView的使用
     5.全局字体的替换
     6.图片框架Glide的使用
