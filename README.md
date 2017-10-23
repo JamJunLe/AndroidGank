@@ -1,6 +1,6 @@
 # AndroidGank
 AndroidGank客户端,干货集中营的第三方客户端。<br>
-使用了MVP+RxJava+Retorfit+OkHttp+WebView+Glide+PhotoView等技术实现了快速开发。<br>
+使用了MVP+RxJava+Retorfit+OkHttp+WebView+Glide+PhotoView等框架实现了快速开发。<br>
 
 ## 数据来源:
 所有数据来源于http://gank.io/api <br>
