@@ -21,13 +21,14 @@ import com.flyman.app.util.log.LogUtils;
 import java.util.List;
 
 
-public class HomepageAdapter extends RecyclerView.Adapter{
+public class HomepageAdapter extends RecyclerView.Adapter {
     private View.OnClickListener mOnClickListener1;
     private View.OnClickListener mOnClickListener2;
     private View.OnClickListener mOnClickListener3;
     private List<DayHistoryArticleCompound> mList;
     private Context mContext;
     private SparseArray<ImageViewVH> mHeightArray;
+
     public HomepageAdapter(Context mContext, List<DayHistoryArticleCompound> list) {
         this.mList = list;
         this.mContext = mContext;
@@ -53,11 +54,13 @@ public class HomepageAdapter extends RecyclerView.Adapter{
         }
         return super.getItemViewType(position);
     }
-    public void setOnitemClickListener(View.OnClickListener onClickListener1,View.OnClickListener onClickListener2,View.OnClickListener onClickListener3) {
+
+    public void setOnitemClickListener(View.OnClickListener onClickListener1, View.OnClickListener onClickListener2, View.OnClickListener onClickListener3) {
         this.mOnClickListener1 = onClickListener1;
         this.mOnClickListener2 = onClickListener2;
         this.mOnClickListener3 = onClickListener3;
     }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LogUtils.e("Thread123", viewType);
@@ -167,6 +170,7 @@ public class HomepageAdapter extends RecyclerView.Adapter{
 
     public class BeautyViewHolder extends RecyclerView.ViewHolder {
         public ImageView iv_beauty;
+
         public BeautyViewHolder(View itemView) {
             super(itemView);
             iv_beauty = (ImageView) itemView.findViewById(R.id.iv_beauty);

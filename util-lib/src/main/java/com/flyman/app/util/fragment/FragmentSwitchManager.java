@@ -52,12 +52,11 @@ public class FragmentSwitchManager {
         }
         FragmentTransaction ft = fm.beginTransaction();
         Fragment mFragment = mFragmentList.get(index);
-        if(mFragment == null)
-        {
+        if (mFragment == null) {
             return;
         }
         getCurrentFragment().onPause();//停止当前的Fragment
-        if (mFragment.isAdded() == true) {
+        if (mFragment.isAdded()) {
             mFragment.onResume();
         } else {
             ft.add(container, mFragment);
@@ -66,26 +65,27 @@ public class FragmentSwitchManager {
         showCurrentFragment(index);
 
     }
+
     /**
-     *  在指定位置添加fragment
+     * 在指定位置添加fragment
      *
-     *  @return nothing
-     *  @param
+     * @param
+     * @return nothing
      */
     public List<Fragment> AddFragment(Fragment fragment, int index) {
-        mFragmentList.add(index,fragment);
+        mFragmentList.add(index, fragment);
         showCurrentFragment(index);
         return mFragmentList;
     }
 
     /**
-     *  在末尾添加fragment
+     * 在末尾添加fragment
      *
-     *  @return nothing
-     *  @param
+     * @param
+     * @return nothing
      */
     public List<Fragment> AddFragment(Fragment fragment) {
-        return AddFragment(fragment, mFragmentList.size()-1);
+        return AddFragment(fragment, mFragmentList.size() - 1);
     }
 
     private void showCurrentFragment(int index) {

@@ -20,6 +20,7 @@ import java.util.List;
 public class BeautyAdapter extends SuperAdapter<ArticleResult.ResultsBean> {
     private SparseArray<ImageViewVH> mHeightArray;
     private int screenWidth;
+
     public BeautyAdapter(Context context, List<ArticleResult.ResultsBean> items, @LayoutRes int layoutResId) {
         super(context, items, layoutResId);
         mHeightArray = new SparseArray();

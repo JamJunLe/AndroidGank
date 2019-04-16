@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/drawable_place_holder"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/drawable_place_holder">
 
     <com.flyman.app.androidgank.wrapper.ScaleImageView
         android:id="@+id/iv_stagger_beauty"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_centerInParent="true"
-        android:adjustViewBounds="true"
-        />
+        android:adjustViewBounds="true" />
 
     <LinearLayout
+        android:id="@+id/ll_stagger_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/iv_stagger_beauty"
         android:layout_alignRight="@+id/iv_stagger_beauty"
+        android:layout_alignBottom="@+id/iv_stagger_beauty"
         android:alpha="0.5"
-        android:id="@+id/ll_stagger_time"
-        android:visibility="gone"
-        >
+        android:visibility="gone">
+
         <TextView
-            android:background="#000000"
             android:id="@+id/tv_stagger_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#000000"
             android:gravity="left|fill_vertical"
             android:padding="@dimen/text_padding_large"
             android:text="time"
             android:textColor="#ffffff"
-            android:textSize="@dimen/text_size_small"
-            />
+            android:textSize="@dimen/text_size_small" />
     </LinearLayout>
 
 </RelativeLayout>
