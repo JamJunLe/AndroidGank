@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <include layout="@layout/appbar_layout"></include>
 
     <ProgressBar
         android:id="@+id/pb_web"
-        android:layout_gravity="start|bottom"
-        android:indeterminate="false"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:max="100"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        style="@style/WebViewProgressBar"
+        android:layout_gravity="start|bottom" />
 
     <FrameLayout
         android:id="@+id/fl_web_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        ></FrameLayout>
+        android:layout_weight="1" />
 </LinearLayout>

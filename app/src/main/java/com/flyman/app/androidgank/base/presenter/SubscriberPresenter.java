@@ -10,6 +10,7 @@ import rx.Subscriber;
 
 public abstract class SubscriberPresenter<T extends Subscriber, V extends IView> extends BasePresenter {
     protected Map<Object, T> taskMap = new HashMap<>();
+
     /**
      * 保存任务
      *
@@ -21,7 +22,7 @@ public abstract class SubscriberPresenter<T extends Subscriber, V extends IView>
         if (mSubscriber == null) {
             mSubscriber = taskMap.put(taskId, subscriber);
         }
-        LogUtils.e("task","saveTask taskId ="+taskId);
+        LogUtils.e("task", "saveTask taskId =" + taskId);
         return mSubscriber;
 
     }
@@ -34,7 +35,7 @@ public abstract class SubscriberPresenter<T extends Subscriber, V extends IView>
      */
     protected Subscriber getTask(Object taskId) {
         Subscriber mSubscriber = null;
-        if (taskMap!= null&&taskMap.containsKey(taskId) == true) ;
+        if (taskMap != null && taskMap.containsKey(taskId) == true) ;
         {
             mSubscriber = taskMap.get(taskId);
         }
@@ -49,12 +50,13 @@ public abstract class SubscriberPresenter<T extends Subscriber, V extends IView>
      */
     protected Subscriber isSoleTask(Object taskId) {
         Subscriber mSubscriber = null;
-        if (taskMap!= null&&taskMap.containsKey(taskId) == true) ;
+        if (taskMap != null && taskMap.containsKey(taskId) == true) ;
         {
             mSubscriber = taskMap.get(taskId);
         }
         return mSubscriber;
     }
+
     /**
      * 取消任务
      *
@@ -67,8 +69,9 @@ public abstract class SubscriberPresenter<T extends Subscriber, V extends IView>
             mSubscriber.unsubscribe();
             taskMap.remove(taskId);
         }
-        LogUtils.e("task","cancelTask taskId ="+taskId);
+        LogUtils.e("task", "cancelTask taskId =" + taskId);
     }
+
     /**
      * 取消所有任务
      */
@@ -78,7 +81,7 @@ public abstract class SubscriberPresenter<T extends Subscriber, V extends IView>
                 cancelTask(entry.getKey());
             }
         }
-        LogUtils.e("task","cancelAllTask");
+        LogUtils.e("task", "cancelAllTask");
     }
 
     @Override

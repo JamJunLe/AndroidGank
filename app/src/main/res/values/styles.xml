@@ -6,27 +6,27 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimaryDark</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:fitsSystemWindows">true</item>
     </style>
 
-    <style name="CommonActivityStyle" parent="AppTheme.NoActionBar">
-    </style>
+    <style name="CommonActivityStyle" parent="AppTheme.NoActionBar"></style>
+
     <style name="ImageActivityStyle" parent="AppTheme.NoActionBar">
         <item name="colorPrimaryDark">@color/navigationBarColor</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
         <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
-    </style>>
+    </style>
 
     <!--菜单栏的style-->
-    <style name="MenuTextStyle" parent="AppTextTitle">
-    </style>
+    <style name="MenuTextStyle" parent="AppTextTitle"></style>
     <!-- Custom Class Styles -->
     <style name="AppText" parent="android:Widget.Holo.Light.TextView">
         <item name="fontPath">fonts/web_font.ttf</item>
@@ -59,7 +59,24 @@
     </style>
 
     <!--Drawer -->
-    <style name="AppTextDrawerItem" parent="AppTextCommon">
+    <style name="AppTextDrawerItem" parent="AppTextCommon"></style>
+
+    <!--indeterminateOnly 表示进度条的进度值是否确定。-->
+    <!--progressDrawable 我们自定义的文件-->
+    <!--indeterminateDrawable 进度条的进度值的风格，定义一写时间之类 的。-->
+    <!--minHeight 最小高-->
+    <!--maxHeight 最大高-->
+    <style name="WebViewProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_drawable</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+
     </style>
 
 </resources>

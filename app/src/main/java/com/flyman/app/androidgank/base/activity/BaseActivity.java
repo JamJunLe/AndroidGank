@@ -67,7 +67,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             if (mSnackbar == null) {
                 mSnackbar = Snackbar.make(view, text, duration);
             } else {
-                if (mSnackbar.isShown() == true) {
+                if (mSnackbar.isShown()) {
                     mSnackbar.dismiss();
                 }
                 mSnackbar.setText(text);

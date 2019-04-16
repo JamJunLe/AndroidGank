@@ -5,32 +5,31 @@
         <item
             android:id="@+id/nav_daily"
             android:icon="@mipmap/nav_icon_daily"
-            android:title="@string/main_toolbar_daily"
-            />
+            android:title="@string/main_toolbar_daily" />
         <item
             android:id="@+id/nav_android"
             android:icon="@mipmap/icon_nav_android"
-            android:title="@string/main_toolbar_android"/>
+            android:title="@string/main_toolbar_android" />
         <item
             android:id="@+id/nav_ios"
             android:icon="@mipmap/icon_nav_ios"
-            android:title="@string/main_toolbar_ios"/>
+            android:title="@string/main_toolbar_ios" />
         <item
             android:id="@+id/nav_web"
             android:icon="@mipmap/icon_nav_web"
-            android:title="@string/main_toolbar_web"/>
+            android:title="@string/main_toolbar_web" />
         <item
             android:id="@+id/nav_expand"
             android:icon="@mipmap/icon_nav_expand"
-            android:title="@string/main_toolbar_expand"/>
+            android:title="@string/main_toolbar_expand" />
         <item
             android:id="@+id/nav_beauty"
             android:icon="@mipmap/icon_nav_beauty"
-            android:title="@string/main_toolbar_beauty"/>
+            android:title="@string/main_toolbar_beauty" />
         <item
             android:id="@+id/nav_about"
             android:icon="@mipmap/icon_nav_about"
-            android:title="@string/main_toolbar_about"/>
+            android:title="@string/main_toolbar_about" />
     </group>
 
 

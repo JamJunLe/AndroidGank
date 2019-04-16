@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.flyman.app.androidgank.R;
 import com.flyman.app.util.log.LogUtils;
+import com.squareup.leakcanary.LeakCanary;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
@@ -31,6 +32,7 @@ public class GankApplication extends Application {
          */
         LogUtils.Builder builder = new LogUtils.Builder(this);
         mContext = getApplicationContext();
+        LeakCanary.install(this);
     }
 
     private void setTypeFace() {

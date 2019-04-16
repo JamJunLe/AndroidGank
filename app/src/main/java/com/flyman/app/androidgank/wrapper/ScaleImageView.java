@@ -28,8 +28,8 @@ public class ScaleImageView extends ImageView {
             int height = MeasureSpec.getSize(heightMeasureSpec);
 
             float scale = (float) initHeight / (float) initWidth;
-            if (width > 0){
-                height = (int) ((float)width * scale);
+            if (width > 0) {
+                height = (int) ((float) width * scale);
             }
 //            LogUtils.e("setLoadMOreRefreshing", "控件的宽 = "+width +" 控件的高 = "+height);
             setMeasuredDimension(width, height);

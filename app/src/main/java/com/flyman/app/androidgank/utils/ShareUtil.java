@@ -10,16 +10,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  @ClassName ShareUtil
- *  @description 使用系统分享
- *
- *  @author Flyman
- *  @date 2017-5-20 22:30
+ * @author Flyman
+ * @ClassName ShareUtil
+ * @description 使用系统分享
+ * @date 2017-5-20 22:30
  */
 public class ShareUtil {
 
     //分享文字
-    public static void shareText(Context mContext,String shareContent) {
+    public static void shareText(Context mContext, String shareContent) {
         Intent shareIntent = new Intent();
         shareIntent.setAction(Intent.ACTION_SEND);
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareContent);
@@ -44,8 +43,7 @@ public class ShareUtil {
     public static void shareMultipleImage(Context mContext, List<String> imagePaths) {
         ArrayList<Uri> uriList = new ArrayList<>();
 //        String path = Environment.getExternalStorageDirectory() + File.separator;
-        for(String imagePath:imagePaths)
-        {
+        for (String imagePath : imagePaths) {
             uriList.add(Uri.fromFile(new File(imagePath)));
         }
         Intent shareIntent = new Intent();

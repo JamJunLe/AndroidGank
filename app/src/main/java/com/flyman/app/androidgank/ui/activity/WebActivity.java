@@ -44,6 +44,7 @@ public class WebActivity extends SubscriberActivity implements IWebClientListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         ButterKnife.bind(this);
+        ButterKnife.bind(mToolbar);
         getIntentFormActivity();
         initValAndConfig();
         setToolbar(mToolbar, url);
@@ -60,6 +61,7 @@ public class WebActivity extends SubscriberActivity implements IWebClientListene
 
     @Override
     protected void initValAndConfig() {
+        //进度条
         mWebView = new WebView(GankApplication.getAppContext());
         mWebView.setWebChromeClient(new MyWebChromeClient(this));
         mWebView.setWebViewClient(new MyWebViewClient(this));
@@ -84,11 +86,11 @@ public class WebActivity extends SubscriberActivity implements IWebClientListene
         //noinspection SimplifiableIfStatement
         switch (id) {
             case R.id.menu_action_open_with_web: {
-                IntentUtil.openByDefaultWeb(this,url);
+                IntentUtil.openByDefaultWeb(this, url);
                 return true;
             }
             case R.id.menu_action_share: {
-                IntentUtil.shareText(this,url);
+                IntentUtil.shareText(this, url);
                 return true;
             }
             default: {
@@ -119,7 +121,7 @@ public class WebActivity extends SubscriberActivity implements IWebClientListene
 
     @Override
     public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
-        showLongSnackBar("加载出了问题请,下拉刷新重试",mWebView);
+        showLongSnackBar("加载出了问题请,下拉刷新重试", mWebView);
     }
 
 

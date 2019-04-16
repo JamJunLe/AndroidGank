@@ -99,7 +99,6 @@ public class MainActivity extends SubscriberActivity implements NavigationView.O
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        //
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -133,7 +132,7 @@ public class MainActivity extends SubscriberActivity implements NavigationView.O
             tv_gank_io.setOnClickListener(this);
             tv_gank_address.setOnClickListener(this);
             tv_gank_io.setText(Html.fromHtml(getResources().getString(R.string.text_about_data_from) + " <font color='#2196f3'><a href=" + ">gank.io/api</a>"));
-            tv_gank_address.setText(Html.fromHtml(getResources().getString(R.string.text_about_data_from_github)+" <font color='#2196f3'><a href=" + ">AndroidGank</a>"));
+            tv_gank_address.setText(Html.fromHtml(getResources().getString(R.string.text_about_data_from_github) + " <font color='#2196f3'><a href=" + ">AndroidGank</a>"));
             String[] titles = getResources().getStringArray(R.array.open_source_framework_title);
             String[] urls = getResources().getStringArray(R.array.open_source_framework_url);
             for (int i = 0; i < titles.length; i++) {

@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
     <FrameLayout
         android:id="@+id/fl_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/appbar"
-        android:layout_weight="1"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways"
-        />
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways" />
     <!--<android.support.design.widget.FloatingActionButton-->
     <!--android:id="@+id/fab"-->
     <!--android:layout_alignParentBottom="true"-->
